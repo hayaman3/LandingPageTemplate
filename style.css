@@ -1,26 +1,40 @@
-body{
-    margin:0;
-    display:flex;
-    flex-direction: column;
-    font-family: 'Roboto', arial;
-    height:100vh;
+*{
+   /* box-sizing: border-box;  */
 }
-.top{
+/* 
+.first
+.second... has width:75vw;
+*/
+body{
+    height: 100%;
+    font-family: 'Roboto', arial;
+    margin:0px;
+}
+.wrapper{
+    display:flex;
+    justify-content: center;
+}
+.wrapper:first-of-type{
+    background-color: #1F2937;
+    color:white;
+}
+.first{
     display:flex;
     flex-direction: column;
-    color:white;
-    background-color: #1F2937;
-    
+    gap: 7rem;
+    padding: 1rem 14rem 7rem;
+    width:75vw;
 }
 .header{
     display:flex;
+    align-self:flex-start;
+    width:inherit;
     justify-content: space-between; 
 }
 .header-logo{
     font-size: 24px;
     color:#F9FaF8;
 }
-
 ul{
     display:flex;
     gap:5px;
@@ -31,44 +45,56 @@ ul{
 }
 a{
     text-decoration:none;
-    font-size: 18px;
+    font-size: 12px;
     color:#E5E7EB;
 }
 .hero{
     display:flex;
     justify-content:center;
     align-items: center;
+    gap:7rem;
+    align-self:center;
 }
 .hero-text-1{
     font-size: 48px;
     font-weight:bolder;
     color:#F9FAF8;
+    padding-bottom: 10px;
 }
 .hero-text-2{
     font-size: 18px;
     color:#E5E7EB;
+    padding-bottom: 10px;
 }
-
 .hero-image{
     background-color: grey;
-    width: 200px;
-    height: 100px;
+    width: 600px;
+    height:170px;
 }
-button{
+.button1{
     background-color: #3882f6;
-    border:none;
+    border: 2px solid #3882f6;
+    padding-inline: 2rem;
+    padding-block: 7px;
+    outline: none;
+    border-radius: 7px;
+    font-weight: 500;
+    color:#E5E7EB
 }
-.container{
+.second{
     display:flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
     text-align: center;
+    width:75vw;
+    padding: 1rem 14rem 7rem;
 }
 .container-text{
     font-size: 36px;
     font-weight: bolder;
-    color:#1F2937
+    color:#1F2937;
+    padding-bottom: 20px;
 }
 .content{
     display:flex;
@@ -86,19 +112,24 @@ button{
     padding:0;
 }
 .card-image{
-    border: 1px solid #3882f6;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
+    outline: none;
+    border-radius: 7px;
 }
 .card-text{
-
+    padding-top:10px;
+}
+.wrapper:nth-of-type(3){
+    background-color:#e5e7eb;
 }
 .quote{
     display:flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    background-color:#e5e7eb;
+    width:75vw;
+    padding: 5rem 14rem;
 }
 .quote-text{
     font-size: 36px;
@@ -109,20 +140,48 @@ button{
 .quote-credit{
     align-self: flex-end;
 }
+.blueBox{
+    width:75vw;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
 .sign-up{
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items: center;
+    width: 100%;
+    background-color: #3882f6;
+    border-radius: 7px;
+    gap: 5px;
+    padding: 3rem 10rem 3rem 10rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color:#E5E7EB
 }
+
+.sign-up-left-text1{
+    font-weight: 700;
+    font-size: 2rem;
+}
+.button2{
+    background-color: #3882f6;
+    border: 2px solid #E5E7EB;
+    padding-inline: 2rem;
+    padding-block: 7px;
+    outline: none;
+    border-radius: 7px;
+    font-weight: 500;
+    color:white
+}
+
+
 .footer{
     min-height: 50px;
     display:flex;
     justify-content:center;
     align-items: center;
-    flex:0;
     background-color: #1F2937;
-}
-.footers{
-    margin-top:auto;
-    text-align:center;
+    color:white;
+    padding: 1rem 10rem;
 }
